@@ -1,0 +1,275 @@
+/* General Body Styling */
+body {
+    background-image: url('images/9713c927-ce90-4aa7-8850-a69ca4024a49.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4fff4;
+    color: #2c3e50;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Header Styling */
+header {
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navbar Styling */
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #27ae60 !important;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+main .text-center {
+    background-color: #ffffff; /* Light green background */
+    border: 2px solid #27ae60; /* Green border */
+    padding: 20px 10%;
+    border-radius: 10px;
+    max-width: 1200px;  /* Added max-width for laptop size */
+    margin: 0 auto;     /* Center the container */
+    width: 90%;         /* Added responsive width */
+}
+
+main h1 {
+    color: #27ae60; /* Green heading */
+}
+
+main .btn-primary {
+    background-color: #27ae60; /* Custom green button */
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+main .btn-primary:hover {
+    background-color: #2ecc71; /* Slightly lighter green */
+}
+
+/* Footer Styling */
+footer {
+    margin-top: auto;
+    padding: 1.5rem 0;
+    backdrop-filter: blur(5px);
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* Modal Styling (Optional Future Use) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #ffffff; /* White modal box */
+    padding: 20px;
+    border: 2px solid #27ae60; /* Green border */
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.modal-content h3 {
+    color: #27ae60;
+}
+
+.modal-content p {
+    margin: 20px 0;
+}
+
+.modal-content .btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content .btn:hover {
+    background-color: #2ecc71;
+}
+
+.modal-content .btn-close {
+    background-color: #e74c3c; /* Red close button */
+}
+
+.modal-content .btn-close:hover {
+    background-color: #c0392b;
+}
+
+/* Animation for Modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Add or update navbar padding */
+.navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Adjusted logo styling */
+.navbar-logo {
+    height: 80px;  /* Increased from 50px */
+    width: auto;
+    margin-right: 1.5rem;  /* Increased spacing between logo and text */
+}
+
+/* Adjust for mobile */
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 60px;  /* Increased from 40px */
+    }
+}
+
+/* Add spacing between nav items */
+.navbar-nav .nav-item {
+    margin-right: 1rem;
+}
+
+/* Remove margin from last nav item */
+.navbar-nav.ms-auto .nav-item {
+    margin-right: 0;
+}
+
+/* Ensure good separation between left and right nav items */
+.navbar-nav.ms-auto {
+    margin-left: 2rem !important;
+}
+
+/* Organizations Section Styling */
+.organizations {
+    padding: 2rem 0;
+}
+
+.org-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.org-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.org-card:hover {
+    transform: translateY(-5px);
+}
+
+.org-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.org-card h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.org-card p {
+    color: #641616;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Specific card styling */
+.tech-card {
+    border-top: 4px solid #007bff;
+}
+
+.diversity-card {
+    border-top: 4px solid #ff69b4;
+}
+
+.leadership-card {
+    border-top: 4px solid #28a745;
+}
+
+.dev-card {
+    border-top: 4px solid #17a2b8;
+}
+
+.creative-card {
+    border-top: 4px solid #6f42c1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .org-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
